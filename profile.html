@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <a href="index.html">
+                <img src="./png/logo-no-background.png" class="logo">
+            </a>
+            <ul>
+                <li id="back"><a href="index.html">Home</a></li>
+                <li><a href="profile.html" style="color: #59448b; font-weight: bold;">Profile</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="linkhub.html">Linkhub</a></li>
+                <li><a href="buy.html">Buy</a></li>
+                <li><a href="calculator.html">Calculator</a></li>
+            </ul>
+        </div>
+        <h1 id="rip" style="color: white;">It's kinda broken with a width smaller than 1000px</h1>
+        <div class="user hide-details" id="userBox">
+            <img src="user.jpeg" onclick="openinfo()">
+            <div class="info">
+                <h1>Bogi</h1>
+                <p>Here you can see a simple profile page with example text.<br>So have fun watching it and, <br> no i'm of course not cat 💀<br>and take a look at some other designs i made.</p>
+                <p>From: Germany</p>
+                <a href="mailto:fake123@gmail.com" target="_self" title="mail">e-mail me</a>
+            </div>
+            <div class="close-icon" onclick="closeinfo()"></div>
+        </div>
+        <script>
+
+            let userBox = document.getElementById("userBox");
+
+            function openinfo(){
+                userBox.classList.remove("hide-details");
+            }
+            function closeinfo(){
+                userBox.classList.add("hide-details");
+            }
+        </script>
+    </div>
+</body>
+</html>
